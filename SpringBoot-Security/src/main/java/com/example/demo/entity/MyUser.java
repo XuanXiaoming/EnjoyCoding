@@ -24,9 +24,6 @@ public class MyUser {
     @Column(name = "password")
     private String password;
 
-    @Column(name = "roles")
-    private String roles;
-
     private final boolean accountNonExpired = true;
 
     private final boolean accountNonLocked = true;
@@ -57,14 +54,6 @@ public class MyUser {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getRoles() {
-        return roles;
-    }
-
-    public void setRoles(String roles) {
-        this.roles = roles;
     }
 
     public boolean isEnabled() {
